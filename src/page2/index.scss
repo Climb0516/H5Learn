@@ -1,0 +1,69 @@
+html,
+body,
+.root{
+    height: 100%;
+}
+
+ .page2 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .header {
+       flex: 40px 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .main {
+        flex: 1;
+        background-color: antiquewhite;
+        -webkit-overflow-scrolling: touch;
+        overflow:auto;
+        img {
+            width: 100%;
+        }
+        .content {
+            .pageBox {
+                margin-bottom: 10px;
+                .pageTitle {
+                    overflow: auto;
+                    .title {
+                        float: left;
+                        margin-left: 10px;
+                    }
+                }
+                .pageListContain {
+                    .pageList {
+                        border-bottom:1px solid #999999; 
+                        overflow: auto;
+                        background-color: orange;
+                        .text {
+                            float: left;
+                            margin-left: 10px;
+                            margin-top: 10px;
+                        }
+                        .btn {
+                            float: right;
+                            margin-right: 10px;
+                            margin-top: 5px;
+                            background-color: aquamarine;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        display: flex;
+        flex: 40px 0;
+        justify-content: center;
+        align-items: center;
+        background: green;
+    }
+}
+
+
+
+.page2 {
+    text-align: center;
+}
